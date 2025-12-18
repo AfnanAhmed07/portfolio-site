@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <i class="fas fa-code logo-icon"></i>
+            <span class="logo-text">Afnan Siddiqui</span>
+        </a>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <div class="nav-overlay"></div>
+    <section class="hero" id="home">
+        <div class="content">
+            <h1>Afnan Siddiqui</h1>
+            <h2><span class="typing-text">Python Developer</span></h2>
+            <p>
+                Aspiring software developer and CSE undergraduate with a strong interest in technology.
+                Skilled in Python, C/C++, and SQL, with a solid technical foundation.
+                Focused on learning, building, and growing in the tech industry.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-code"></i>View Projects
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-paper-plane"></i>Contact Me
+                </a>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/AfnanAhmed07"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/afnan-ahmed-siddiqui"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="profile-container">
+            <div class="border-outer"></div>
+            <div class="border-middle"></div>
+            <div class="border-inner"></div>
+            <div class="border-container"></div>
+            <div class="pulse-ring"></div>
+            <div class="pulse-ring"></div>
+            <div class="pulse-ring"></div>
+            <img src="profile.png" width="240px" alt="Profile Picture" class="profile-image">
+        </div>
+    </section>
+<!--#About section-->
+<section id="about" class="about-section">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+  I am a Computer Science Engineering undergraduate from Nagpur with a strong
+  interest in Python development, web technologies, and databases. I enjoy
+  turning ideas into working code and focusing on clean logic, readable
+  structure, and practical problem-solving.
+</p>
+
+<p>
+  My technical skills include Python, C, and C++, along with HTML, CSS,
+  JavaScript, and SQL. I have built command-line applications like games,
+  chatbots, and stock portfolio tools, as well as database projects that
+  practice real-world scenarios such as hospital management and reporting.
+</p>
+
+<p>
+  Beyond coding, I’m comfortable working in teams, taking ownership of tasks,
+  and communicating clearly. Through internships, virtual job simulations, and
+  academic projects, I’ve learned how to break down problems, experiment with
+  solutions, and deliver results on time. I am actively looking for
+  opportunities where I can keep learning, contribute to meaningful projects,
+  and grow as a software developer.
+</p>
+    </div>
+  </div>
+</section>
+
+    
+<!--Project Section-->
+    <section id="projects" class="projects-section">
+  <div class="projects-container">
+    <div class="projects-header">
+      <h2>Featured Projects</h2>
+      <p>Practical work with Python and SQL, focused on problem-solving and clean logic.</p>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>Stock Portfolio Manager 📈</h3>
+        <p class="project-tech">Python 3 · csv</p>
+        <p class="project-desc">
+          Command-line tool to manage and track stock investments with a predefined price list.
+        </p>
+        <ul>
+          <li>Shows available stocks with current prices.</li>
+          <li>Validates symbols and quantities.</li>
+          <li>Calculates per-stock and total portfolio value.</li>
+          <li>Exports results to .txt or .csv.</li>
+        </ul>
+        <a href="https://github.com/AfnanAhmed07/Stock-Portfolio-Tracker" target="_blank" class="btn btn-secondary">
+          View Project
+        </a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <h3>Hangman Game 🎮</h3>
+        <p class="project-tech">Python 3</p>
+        <p class="project-desc">
+          Terminal-based Hangman where you guess letters to reveal a hidden word.
+        </p>
+        <ul>
+          <li>Random words from a predefined list.</li>
+          <li>Tracks correct and incorrect guesses.</li>
+          <li>Shows current word state and attempts left.</li>
+          <li>Great for practicing loops and conditionals.</li>
+        </ul>
+        <a href="https://github.com/AfnanAhmed07/Hangman-Game" target="_blank" class="btn btn-secondary">
+          View Project
+        </a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <h3>Hospital Management Database 🏥</h3>
+        <p class="project-tech">SQL (MySQL / PostgreSQL / SQL Server)</p>
+        <p class="project-desc">
+          Relational schema to manage doctors and patients with analytical queries.
+        </p>
+        <ul>
+          <li>Doctors table with details and specialization.</li>
+          <li>Patients table linked via foreign key.</li>
+          <li>Query to count patients per doctor.</li>
+          <li>Query to find doctor(s) with max patients.</li>
+        </ul>
+        <a href="https://github.com/AfnanAhmed07/SQL-Practice" target="_blank" class="btn btn-secondary">
+          View Project
+        </a>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <h3>Chat-Bot 💬</h3>
+        <p class="project-tech">Python 3</p>
+        <p class="project-desc">
+          Rule-based chatbot that responds to basic greetings and exits on command.
+        </p>
+        <ul>
+          <li>Greets user on startup.</li>
+          <li>Understands “hello” and “how are you”.</li>
+          <li>Ends chat on “bye” or “exit”.</li>
+          <li>Fallback for unknown inputs.</li>
+        </ul>
+        <a href="https://github.com/AfnanAhmed07/Chat-Bot" target="_blank" class="btn btn-secondary">
+          View Project
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Skills Section-->
+<section id="skills" class="skills-section">
+  <div class="skills-container">
+    <div class="skills-header">
+      <h2>Skills</h2>
+      <p>A blend of core programming, web development, databases, and soft skills.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Programming Languages</h3>
+        <p class="skill-desc">
+          Writing clean, structured code for problem-solving and CLI applications.
+        </p>
+        <ul>
+          <li>Python</li>
+          <li>C</li>
+          <li>C++</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Web Technologies</h3>
+        <p class="skill-desc">
+          Building responsive, user-friendly interfaces with modern HTML/CSS and JS.
+        </p>
+        <ul>
+          <li>HTML, CSS</li>
+          <li>Responsive layouts</li>
+          <li>DOM manipulation</li>
+          <li>Form handling</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Database</h3>
+        <p class="skill-desc">
+          Working with relational databases for queries and table operations.
+        </p>
+        <ul>
+          <li>SQL (queries, joins)</li>
+          <li>Table design & operations</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Soft Skills</h3>
+        <p class="skill-desc">
+          Strong communication and teamwork to support technical contributions.
+        </p>
+        <ul>
+          <li>Problem solving & logical reasoning</li>
+          <li>Leadership & team collaboration</li>
+          <li>Adaptability</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--#CONTACT ME-->
+<section id="contact" class="contact-section">
+  <div class="contact-layout">
+    <!-- Contact card -->
+    <div class="contact-card">
+      <h2>Contact Me</h2>
+      <p class="contact-text">
+        Open to internships, projects, and collaborations in Python, web development, and SQL.
+      </p>
+
+      <div class="contact-actions">
+        <a href="mailto:siddiquiafnan28@gmail.com" class="btn btn-primary">
+          <i class="fas fa-envelope"></i> Email Me
+        </a>
+        <a href="https://www.linkedin.com/in/afnan-ahmed-siddiqui" target="_blank" class="btn btn-secondary">
+          <i class="fab fa-linkedin"></i> Connect on LinkedIn
+        </a>
+      </div>
+
+      <p class="contact-note">
+        Based in Nagpur, India · Available for remote and on-site opportunities.
+      </p>
+    </div>
+
+    <!-- Feedback form card -->
+    <div class="feedback-card">
+      <h2>Website Feedback</h2>
+      <p class="feedback-text">
+        Share your experience with the UI and overall portfolio.
+      </p>
+
+      <form id="feedback-form" class="feedback-form">
+        <label for="feedback-name">Name (optional)</label>
+        <input type="text" id="feedback-name" name="name" placeholder="Your name">
+
+        <label for="feedback-rating">Rate the UI</label>
+        <select id="feedback-rating" name="rating" required>
+          <option value="" disabled selected>Select rating</option>
+          <option value="Excellent">Excellent</option>
+          <option value="Very Good">Very Good</option>
+          <option value="Good">Good</option>
+          <option value="Average">Average</option>
+          <option value="Needs Improvement">Needs Improvement</option>
+        </select>
+
+        <label for="feedback-comments">Comments</label>
+        <textarea id="feedback-comments" name="comments" rows="3"
+          placeholder="What did you like? What can be improved?" required></textarea>
+
+        <button type="submit" class="btn btn-secondary feedback-submit">
+          Submit Feedback
+        </button>
+      </form>
+
+      <p id="feedback-status" class="contact-note"></p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
